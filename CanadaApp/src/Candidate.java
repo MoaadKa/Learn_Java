@@ -1,4 +1,4 @@
-public class Candidate {
+public class Candidate extends User{
 
     private String fullName;
     private int age;
@@ -69,5 +69,10 @@ public class Candidate {
                 ", numberOfChildren=" + numberOfChildren +
                 ", degree='" + degree + '\'' +
                 '}';
+    }
+
+    @Override
+    public void authorities() {
+        System.out.println("You don't have access");
     }
 }
