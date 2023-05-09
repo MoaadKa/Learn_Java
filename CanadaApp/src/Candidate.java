@@ -1,4 +1,4 @@
-public class Candidate extends User{
+public class Candidate {
 
     private String fullName;
     private int age;
@@ -71,8 +71,4 @@ public class Candidate extends User{
                 '}';
     }
 
-    @Override
-    public void authorities() {
-        System.out.println("You don't have access");
-    }
 }
