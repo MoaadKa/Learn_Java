@@ -2,30 +2,45 @@ import java.util.Scanner;
 
 public class Questions {
 
-    public Questions(Candidate candidate) {
-        this.candidate = candidate;
+    private String fullNameQuestion = "What's your name?";
+    private String ageQuestion = "How old are you?";
+    private String situationQuestion = "What's your family situation?";
+    private String degreeQuestion = "What's your level of studies?";
+    private String numberOfChildrenQuestion = "How many children you have?";
+
+    public Questions() {
     }
 
-    Candidate candidate;
+    public Questions(String fullNameQuestion,
+                     String ageQuestion,
+                     String situationQuestion,
+                     String degreeQuestion,
+                     String numberOfChildrenQuestion) {
+        this.fullNameQuestion = fullNameQuestion;
+        this.ageQuestion = ageQuestion;
+        this.situationQuestion = situationQuestion;
+        this.degreeQuestion = degreeQuestion;
+        this.numberOfChildrenQuestion = numberOfChildrenQuestion;
+    }
 
-    public void questions() {
-        Scanner keyboard = new Scanner(System.in);
+    public String getFullNameQuestion() {
+        return fullNameQuestion;
+    }
 
-        System.out.println("Enter your full name: ");
-        candidate.setFullName(keyboard.nextLine());
-        System.out.println("How old are you: ");
-        candidate.setAge(keyboard.nextInt());
-        keyboard.nextLine();
+    public String getAgeQuestion() {
+        return ageQuestion;
+    }
 
-        System.out.println("What's your level of studies: ");
-        candidate.setDegree(keyboard.nextLine());
+    public String getSituationQuestion() {
+        return situationQuestion;
+    }
 
-        System.out.println("Family situation: ");
-        candidate.setSituation(keyboard.nextLine());
-        System.out.println("Number of children");
-        candidate.setNumberOfChildren(keyboard.nextInt());
+    public String getDegreeQuestion() {
+        return degreeQuestion;
+    }
 
-
+    public String getNumberOfChildrenQuestion() {
+        return numberOfChildrenQuestion;
     }
 }
 
