@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Questions {
 
-    public Questions() {
-        new Candidate();
+    public Questions(Candidate candidate) {
+        this.candidate = candidate;
     }
 
     Candidate candidate;
