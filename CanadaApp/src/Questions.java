@@ -2,45 +2,15 @@ import java.util.Scanner;
 
 public class Questions {
 
-    private String fullNameQuestion = "What's your name?";
-    private String ageQuestion = "How old are you?";
-    private String situationQuestion = "What's your family situation?";
-    private String degreeQuestion = "What's your level of studies?";
-    private String numberOfChildrenQuestion = "How many children you have?";
+    public static final String fullNameQuestion = "What's your name?";
+    public static final String ageQuestion = "How old are you?";
+    public static final String situationQuestion = "What's your family situation?";
+    public static final String degreeQuestion = "What's your level of studies?";
+    public static final String numberOfChildrenQuestion = "How many children you have?";
 
-    public Questions() {
+    private Questions() {
     }
 
-    public Questions(String fullNameQuestion,
-                     String ageQuestion,
-                     String situationQuestion,
-                     String degreeQuestion,
-                     String numberOfChildrenQuestion) {
-        this.fullNameQuestion = fullNameQuestion;
-        this.ageQuestion = ageQuestion;
-        this.situationQuestion = situationQuestion;
-        this.degreeQuestion = degreeQuestion;
-        this.numberOfChildrenQuestion = numberOfChildrenQuestion;
-    }
-
-    public String getFullNameQuestion() {
-        return fullNameQuestion;
-    }
-
-    public String getAgeQuestion() {
-        return ageQuestion;
-    }
-
-    public String getSituationQuestion() {
-        return situationQuestion;
-    }
-
-    public String getDegreeQuestion() {
-        return degreeQuestion;
-    }
-
-    public String getNumberOfChildrenQuestion() {
-        return numberOfChildrenQuestion;
-    }
+   
 }
 
